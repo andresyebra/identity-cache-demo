@@ -1,21 +1,19 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  name: MyString
-  description: MyText
-  genre: MyString
-  released_at: 2026-03-26
-  active: false
-  rating: 9.99
-  downloads_count: 1
-  featured: false
+  name: Thriller
+  description: Michael Jackson's iconic album
+  genre: Pop
+  released_at: 1982-11-30
+  active: true
+  rating: 5.0
+  downloads_count: 70000000
+  featured: true
 
 two:
-  name: MyString
-  description: MyText
-  genre: MyString
-  released_at: 2026-03-26
-  active: false
-  rating: 9.99
-  downloads_count: 1
+  name: Nevermind
+  description: Nirvana's groundbreaking grunge album
+  genre: Grunge
+  released_at: 1991-09-24
+  active: true
+  rating: 4.8
+  downloads_count: 30000000
   featured: false

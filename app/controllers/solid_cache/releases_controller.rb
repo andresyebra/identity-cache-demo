@@ -6,11 +6,7 @@ module SolidCache
     def index
       start_time = Process.clock_gettime(Process::CLOCK_MONOTONIC)
 
-      @releases = Rails.cache.fetch("solid_cache/releases/genre/#{params[:genre]}", expires_in: 5.minutes) {
-        ::Release.where(genre: params[:genre]).to_a
-      } if params[:genre].present?
-
-      @releases ||= Rails.cache.fetch("solid_cache/releases/all", expires_in: 5.minutes) {
+      @releases = Rails.cache.fetch("solid_cache/releases/all", expires_in: 5.minutes) {
         ::Release.all.to_a
       }
 
